@@ -1,0 +1,88 @@
+.horizontal-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    
+}
+.horizontal-ul > li  {
+    
+    display: flex; 
+    justify-content: center; 
+    
+
+}
+
+.horizontal-ul > li > a{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;    
+}
+.horizontal-ul > li > a:hover {
+
+    background-color: #111111;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(4px);
+  }
+
+  .paragraph-style{
+
+    display:block;
+    background-color: #e0e0e0;
+    padding-left: 13px;
+    padding-right: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+  }
+
+  .box-container{
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .box{
+
+    flex:1;
+    border: 1px solid #111111;
+    border-radius: 3px;
+  }
+
+  .pseudo-class  .item1:hover{
+
+    font-size:20px;
+    color: rgb(115, 165, 204);
+
+  }
+
+  .pseudo-class .item2:active{
+
+    font-size: 30px;
+  }
+
+  .pseudo-class .item3:focus{
+
+    background-color: yellow;
+  }
+
+  .dynamic-content >p::before{
+    content:"start" ;
+    color: #287c0c;
+
+  }
+
+  .dynamic-content >p::after{
+    content:"end" ;
+    color: #287c0c;
+
+  }
