@@ -33,7 +33,7 @@
     transform: translateY(4px);
   }
 
-  .paragraph-style{
+ div{
 
     display:block;
     background-color: #e0e0e0;
@@ -44,45 +44,45 @@
     margin: 20px;
   }
 
-  .box-container{
-
-    display: flex;
-    justify-content: space-between;
-
+  *{
+    box-shadow: 0px 0px 1px grey;
   }
+.highlight{
+    background-color: yellow;
+}
+#unique{
+    color:red;
+}
 
-  .box{
+input[type="text"]{
 
-    flex:1;
-    border: 1px solid #111111;
-    border-radius: 3px;
-  }
+    width:100%;
+    border-color: blue;
+}
 
-  .pseudo-class  .item1:hover{
+.descendant div p {
 
-    font-size:20px;
-    color: rgb(115, 165, 204);
+    font-weight: bold;
+}
 
-  }
+ul>li{
+    list-style-type:circle ;
+}
+.adjacent h2+p{
 
-  .pseudo-class .item2:active{
+    color:aqua;
+}
 
-    font-size: 30px;
-  }
+.general h2 ~p{
 
-  .pseudo-class .item3:focus{
-
-     background-color: yellow;   /*currently not working  */
-  }
-
-  .dynamic-content >p::before{
-    content:"start" ;
-    color: #287c0c;
-
-  }
-
-  .dynamic-content >p::after{
-    content:"end" ;
-    color: #287c0c;
-
-  }
+    color:rgb(156, 95, 21);
+}
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
