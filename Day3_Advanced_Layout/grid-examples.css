@@ -1,0 +1,134 @@
+.global-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:auto 1fr auto;
+    grid-template-areas: "header header"
+                        "sidebar content"
+                        "footer footer";
+    height: 100vh;
+    gap:3px
+    
+}
+
+.header{
+    grid-area:header;
+    background-color: rgb(56, 217, 109);
+    padding:4px;
+    color:white;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header header p{
+    font-size: 24px;
+    margin: 0;
+}
+
+.header nav ul{
+
+    list-style-type: none;
+    padding:0;
+    margin:10px 0 0 0;
+    display:flex;
+    gap:10px;
+}
+
+.header nav ul li{
+
+    background-color: #07af2b;
+    text-decoration-style: none;
+    
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color:rgb(131, 230, 183);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    align-items: center;
+}
+.header nav ul li a:hover{
+
+    color:rgb(255, 255, 255);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(146, 173, 173);
+    padding: 20px;
+}
+
+.content-area{
+    grid-area: content;
+    background-color:rgb(146, 173, 173);
+    padding:20px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgba(205, 205, 204, 0.723);
+    width:100vw;
+    padding:12px;
+    text-align: center;
+
+}
+
+@media (max-width:800px) {
+    .global-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: "header"
+                            "sidebar"
+                            "content"
+                            "footer" ;
+        height: 100vh;
+        gap:3px
+        
+    }
+
+}
+
+@media (max-width:600px) {
+    .global-container{
+        display: grid;
+        grid-template-columns: auto 3fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+                            "header sidebar"
+                            "header content"
+                            "footer footer" ;
+        height: 100vh;
+        gap:3px
+        
+    }
+
+    .header{
+        grid-area:header;
+        background-color: rgb(56, 217, 109);
+        padding:4px;
+        color:white;
+        text-align: center;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header nav ul{
+        text-decoration: none;
+        color:rgb(131, 230, 183);
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* todo- work on footer */
+    /* .header nav ul a */
+
+
+
+}

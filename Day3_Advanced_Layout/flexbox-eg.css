@@ -95,7 +95,7 @@ footer{
     .column {
         flex-direction: column;
         width: 30vw;
-        flex: 1;
+        
     }
 
 
@@ -115,7 +115,7 @@ footer{
     }
 
     nav ul li {
-        width: 100%;
+        width: 60%;
         text-align: left;
         
     }
@@ -126,6 +126,10 @@ footer{
         
         gap:10px;
     }
-  
+   a
+    nav ul li{
+        align-items: left;
+        margin-left: 0;
+    }
 
 }
