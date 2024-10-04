@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="main-container">
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#"><img src="" alt="image" >Live Orders</a></li>
+                <li><a href="#"><img src="" alt="image" >Order History</a></li>
+                <li><a href="#"><img src="" alt="image" >Offers</a></li>
+                <li><a href="#"><img src="" alt="image" >Products</a></li>
+                <li><a href="#"><img src="" alt="image" >Stock</a></li>
+                <li><a href="#"><img src="" alt="image" >Message</a></li>
+                <li><a href="#"><img src="" alt="image" >Settings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header">
+        <header>
+            <input type="search" name="itemSearch" id="search-bar">
+            <span id="status-indicator">Open for Order</span>
+            <span id="notification-icon">&#128276</span>
+            <span id="profile-pic"></span>
+            <span id="profile-name"></span>
+        </header>    
+    </div>
+
+    <div class="main-content">
+        <div class="summary-panel">
+            <div class="order-summary">
+
+            </div>
+            <div class="pending-summary">
+
+            </div>
+            <div class="disptch-summary">
+
+            </div>
+            
+        </div>
+        <div class="order-list-heading">
+            <span>Orders</span>
+            <span>
+                <select class="list-items">
+                    <option value="recent-orders">Recent orders</option>
+                    <option value="order-history">Order History</option>
+                    <option value="cancel-history">Cancel Histroy</option>
+                    <option value="inventory-items">Inventory Items</option>
+                </select>
+            </span>
+        </div>
+    <div class="order-list">
+        <div class="order-header">
+            <div data-column="id" data-order="asc"> id <span class="arrow">&#9650;</span></div>
+            <div data-column="name" > Name </span></div>
+            <div data-column="payment" > Payment </span></div>
+            <div data-column="time-remaining" data-order="asc"> Time remaining <span class="arrow">&#9650;</span></div>
+            <div data-column="type" > Type </span></div>
+            <div data-column="status" > Status </div>
+            <div data-column="total" > Total </div>
+            <div data-column="action" > Action </div>
+        </div>
+        <div class="order-list">
+            <div class="list-item">
+                <div>#2632</div>
+                <div><img src="" alt="avatar"></div>
+                <div>Cash</div>
+                <div><img src="" alt="image"> 13 min</div>
+                <div class="list-order-type">Delivery</div>
+                <div class="list-order-status">On the way</div>
+                <div>$12.00</div>
+                <div>&#8942;</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+    
+</body>
+</html>
