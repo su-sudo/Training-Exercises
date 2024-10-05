@@ -9,37 +9,66 @@
 <body>
 <div class="main-container">
     <div class="sidebar">
+        <div class="company-logo">
+            <img src="bringova logo.png" alt="">
+        </div>
         <nav>
             <ul>
-                <li><a href="#"><img src="" alt="image" >Live Orders</a></li>
-                <li><a href="#"><img src="" alt="image" >Order History</a></li>
-                <li><a href="#"><img src="" alt="image" >Offers</a></li>
-                <li><a href="#"><img src="" alt="image" >Products</a></li>
-                <li><a href="#"><img src="" alt="image" >Stock</a></li>
-                <li><a href="#"><img src="" alt="image" >Message</a></li>
-                <li><a href="#"><img src="" alt="image" >Settings</a></li>
+                <li><a href="#" selected><div>💳</div> Live Orders</a></li>
+                <li><a href="#">💳 Order History</a></li>
+                <li><a href="#">💳 Offers</a></li>
+                <li><a href="#">💳 Products</a></li>
+                <li><a href="#">💳 Stock</a></li>
+                <li><a href="#">💳 Message</a></li>
+                <li><a href="#">💳 Settings</a></li>
             </ul>
         </nav>
     </div>
     <div class="header">
         <header>
-            <input type="search" name="itemSearch" id="search-bar">
-            <span id="status-indicator">Open for Order</span>
-            <span id="notification-icon">&#128276</span>
-            <span id="profile-pic"></span>
-            <span id="profile-name"></span>
+            <input type="search" name="itemSearch" id="search-bar" placeholder="&#128269;">
+            <div>
+                <span id="status-indicator">Open for Order &#128994;</span>
+                <span id="notification-icon"><img src="bell-edited.png" alt="bell" ></span>
+                <span id="profile-pic">.</span>
+                <span id="profile-name">Name</span>
+            </div>
         </header>    
     </div>
 
     <div class="main-content">
         <div class="summary-panel">
             <div class="order-summary">
-
+                    <div class="circle-container">
+                        <img src="bag.png" alt="" srcset="">
+                    </div>
+                    <span>
+                        <h2>47</h2>
+                        <h4>Orders</h4>
+                    </span>
             </div>
             <div class="pending-summary">
+                <div class="order-summary">
+                    <div class="circle-container">
+                        <img src="bag.png" alt="" srcset="">
+                    </div>
+                    <span>
+                        <h2>47</h2>
+                        <h4>Pending</h4>
+                    </span>
+            </div>
 
             </div>
             <div class="disptch-summary">
+                <div class="order-summary">
+                    <div class="circle-container">
+                        <img src="bag.png" alt="" srcset="">
+                    </div>
+                    <span>
+                        <h2>47</h2>
+                        <h4>Dispatched</h4>
+                    </span>
+            </div>
 
             </div>
             
@@ -69,14 +98,65 @@
         <div class="order-list">
             <div class="list-item">
                 <div>#2632</div>
-                <div><img src="" alt="avatar"></div>
+                <div><img src="avatar.png" alt="avatar">
+                    <div class="orderName">John</div>
+                </div>
                 <div>Cash</div>
-                <div><img src="" alt="image"> 13 min</div>
+                <div>&#x1F560; 13 min</div>
+                <div class="list-order-type" id="delivery">Delivery</div>
+                <div class="list-order-status">On the way</div>
+                <div>$12.00</div>
+                <div>&#8942;</div>
+            </div>
+            <div class="list-item">
+                <div>#2632</div>
+                <div><img src="avatar.png" alt="avatar">
+                    <div class="orderName">John</div>
+                </div>
+                <div>Cash</div>
+                <div>&#x1F560; 13 min</div>
+                <div class="list-order-type">Collection</div>
+                <div class="list-order-status" id="ready">Ready</div>
+                <div>$12.00</div>
+                <div>&#8942;</div>
+            </div>
+            <div class="list-item">
+                <div>#2632</div>
+                <div><img src="avatar.png" alt="avatar">
+                    <div class="orderName">John</div>
+                </div>
+                <div>Cash</div>
+                <div>&#x1F560; 13 min</div>
                 <div class="list-order-type">Delivery</div>
                 <div class="list-order-status">On the way</div>
                 <div>$12.00</div>
                 <div>&#8942;</div>
             </div>
+            <div class="list-item">
+                <div>#2632</div>
+                <div><img src="avatar.png" alt="avatar">
+                    <div class="orderName">John</div>
+                </div>
+                <div>Cash</div>
+                <div>&#x1F560; 13 min</div>
+                <div class="list-order-type">Delivery</div>
+                <div class="list-order-status">On the way</div>
+                <div>$12.00</div>
+                <div>&#8942;</div>
+            </div>
+            <div class="list-item">
+                <div>#2632</div>
+                <div><img src="avatar.png" alt="avatar">
+                    <div class="orderName">John</div>
+                </div>
+                <div>Cash</div>
+                <div>&#x1F560; 13 min</div>
+                <div class="list-order-type">Delivery</div>
+                <div class="list-order-status">On the way</div>
+                <div>$12.00</div>
+                <div>&#8942;</div>
+            </div>
+
         </div>
     </div>
     </div>
