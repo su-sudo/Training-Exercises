@@ -187,6 +187,7 @@ header{
     background-color: #ffffff;
     padding:12px;
     border-radius: 2em;
+    
 }
 .summary-panel div div {
     flex: 1;
@@ -194,6 +195,7 @@ header{
     align-items: flex-start;
     gap: 10px;
     flex-shrink: 1;
+    
     
 }
 
@@ -225,6 +227,13 @@ header{
         /* Todo background circle */
 }
 
+.summary-panel div div{
+    flex-grow: 0;       
+    flex-shrink: 0;     
+    width: auto;        
+    max-width: 200px;   
+    align-self: start;
+}
 
 .order-list-heading {
     grid-area: orderlistheading;
