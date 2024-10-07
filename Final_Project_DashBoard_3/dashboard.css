@@ -160,8 +160,10 @@ header{
 .summary-panel div div {
     flex: 1;
     display: flex;
-    align-items: center;
-    gap: 10px; 
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 1;
+    
 }
 
 .summary-panel div div img, span{
@@ -222,12 +224,14 @@ header{
     overflow: scroll;
     height: 20px; 
 }
-.order-list {
-    grid-area: orderlist;
+/* .order-list {
+    
+    flex:1;
     width: 100%;
-}
+} */
 
 .order-list{
+    grid-area: orderlist;
     display: flex;
     gap:12px;
     flex-direction: column;
