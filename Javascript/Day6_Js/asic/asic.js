@@ -3,13 +3,16 @@ function calculateROI(){
     const principal = parseFloat(document.getElementById("input-pamnt").value);
     let roi = parseFloat(document.getElementById("input-roi").value);
     const years = parseFloat(document.getElementById("input-years").value);
-    // document.getElementById("error-year").innerText =" ";
+    document.getElementById("error-year").innerText =" ";
+    document.getElementById("interest-rslt").innerText = "Interest : "; 
+    document.getElementById("total-amnt").innerText ="Total Amount : ";
+    document.getElementById('additional-info').innerText = "Additional Information : ";
 
     if(!isNaN(principal) && !isNaN(roi) && !isNaN(years)){
 
         if(principal > 500 && principal < 10000){
 
-            rate = rateCalculate(principal, roi, years);
+            let rate = rateCalculate(principal, roi, years);
             const interest = (principal * rate * years) / 100;
             const totalamnt = principal + interest;
 

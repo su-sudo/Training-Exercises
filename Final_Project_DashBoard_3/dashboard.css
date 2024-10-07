@@ -44,23 +44,35 @@ body {
 }
 
 .sidebar nav ul li a{
-    padding: 2px 3px 2px 3px;
+    
     text-decoration: none;
     color: #8e9097;
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    padding: 2px;
+    
 
    
 }
-.sidebar nav ul li a.selected{
+
+.sidebar nav ul li{
+
+    padding: 3em 2em 3em 2em;
+}
+.sidebar nav ul li.selected{
 
     background-color: #ffebea;
+    
 }
+.sidebar nav ul li.selected a{
+
+    color:#f25555;
+
+}
+
 .sidebar nav ul li{
     position: relative;
-    padding: 5px;
+    padding: 15px;
     background-color: ffffff;
     margin: 5px;
     margin-top: 30px;
@@ -80,7 +92,26 @@ body {
     width: 3px; 
     background-color: #ff5733; 
     border-radius: 10px;
+    bottom: -1.6px;
 }
+.sidebar nav ul li a div img{
+ 
+ height: 20px;
+ width: 20px;
+ 
+}
+.sidebar nav ul li.selected a div img{
+    filter: invert(60%) sepia(93%) saturate(6447%) hue-rotate(1deg) brightness(98%) contrast(109%);}
+
+.sidebar nav ul li:hover a{
+        filter: invert(60%) sepia(93%) saturate(6447%) hue-rotate(1deg) brightness(98%) contrast(109%);}
+
+    
+
+.sidebar nav ul li:hover a div img{
+    
+    filter: invert(60%) sepia(93%) saturate(6447%) hue-rotate(1deg) brightness(98%) contrast(109%);}
+    
 
 header{
     grid-area: header;
@@ -341,7 +372,7 @@ header{
         border-radius: 0px;
     }
     .sidebar nav ul li:hover {
-        position: relative; /* Make the li the reference point for the pseudo-element */
+        position: relative; 
     }
     
     .sidebar nav ul li:hover::after {
