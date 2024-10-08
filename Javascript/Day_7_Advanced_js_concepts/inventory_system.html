@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inventory.css">
+    <title>Inventory System</title>
+</head>
+<body>
+<div class="global-container">
+    <div class="heading">
+        <h2>Inventory System</h2>
+    </div>
+    <div class="text-input-grp">
+        <label for="name">Name :</label>
+        <input type="text" id="name" placeholder="Enter Product Name">
+        <label for="price">Price :</label>
+        <input type="text" id="price" placeholder="Enter Product price">
+        <label for="quantity">Quantity :</label>
+        <input type="number" id="quantity" placeholder="Enter Product Quantity">
+    </div>
+    <div class="btn-add-product">
+        <button type="button" value="" id="btn-addproduct">Add Product</button>
+    </div>
+    <div class="output">
+        <div
+            class="table-responsive"
+        ><h3 class="table-heading">Inventory List</h3>
+            <table
+                class="table table-primary"
+            >
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>    
+
+
+
+<script src="inventory.js"></script>    
+</body>
+</html>

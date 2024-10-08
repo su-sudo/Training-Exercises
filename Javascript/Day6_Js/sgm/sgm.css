@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.text-input-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.text-input-grp label {
+    margin-top: 10px;
+}
+
+.text-input-grp input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-grp {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap:12px;
+    width: 100%;
+}
+
+.button-grp input[type="button"] {
+    background-color: rgb(2, 121, 213);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-grp input[type="button"]:hover {
+    background-color: rgb(2, 121, 213);;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.output h3 {
+    margin-left: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.btn-avg-grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-avg-grade input[type="button"] {
+    background-color:  rgb(2, 121, 213);;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-avg-grade input[type="button"]:hover {
+    background-color: #87ceeb;
+}
+
+.btn-avg-grade h3 {
+    font-size: 1.2em;
+    text-align: center;
+}
