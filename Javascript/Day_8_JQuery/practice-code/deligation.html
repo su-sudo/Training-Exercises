@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>JED</title>
+</head>
+<body>
+    <button id="add-item">Add Item</button>
+    <ul id="item-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <script>
+        $('#item-list').on('click', 'li', function() {
+            $(this).text("");
+            $(this).remove();
+        });
+        $('#add-item').click(function() {
+            const newItem = $('<li>').text('New Item');
+            $('#item-list').append(newItem);
+        });
+
+        $(document).ready(function() {
+            $('#item-list').treeview({
+                collapsed: true
+            });
+            });
+    </script>
+</body>
+</html>
