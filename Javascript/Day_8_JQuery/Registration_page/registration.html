@@ -3,9 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration</title>
+    <title>Create Your Account</title>
+    <link rel="stylesheet" href="registation.css">
 </head>
 <body>
-    
+    <div class="global-container">
+        <header>
+            <h1>Create Your Account</h1>
+            <h2>Join us today and start your journey!</h2>
+        </header>
+
+        <form id="registrationForm" aria-labelledby="registrationForm" novalidate>
+            <div class="section personal-info">
+                <h3>Personal Information</h3>
+                <div class="input-group">
+                    <input type="text" id="firstName" placeholder=" " required />
+                    <label for="firstName" class="floating-label">First Name</label>
+                    <span class="tooltip">Please enter your first name.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="lastName" placeholder=" " required />
+                    <label for="lastName" class="floating-label">Last Name</label>
+                    <span class="tooltip">Please enter your last name.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="date" id="dob" required />
+                    <label for="dob" class="floating-label">Date of Birth</label>
+                    <span class="tooltip">Please select your date of birth.</span>
+                </div>
+
+                <div class="input-groupp gender-group">
+                    <label class="floatingh-label">Gender</label>
+                    <div class="radio-group">
+                        <div class="gender-option">
+                            <input type="radio" id="male" name="gender" value="male" required />
+                            <span class="radio-button"></span>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="female" name="gender" value="female" required />
+                            <span class="radio-button"></span>
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="other" name="gender" value="other" required />
+                            <span class="radio-button"></span>
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <span class="tooltip">Please select your gender.</span>
+                </div>
+            </div>
+
+            <div class="section contact-info">
+                <h3>Contact Information</h3>
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder="+1 (555) 123-4567" required />
+                    <!-- Removed the label for phone number, only placeholder remains -->
+                    <span class="tooltip">Please enter your phone number.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" placeholder=" " required />
+                    <label for="email" class="floating-label">Email Address</label>
+                    <span class="tooltip">Please enter a valid email address.</span>
+                </div>
+            </div>
+
+            <div class="section address-info">
+                <h3>Address</h3>
+                <div class="input-group">
+                    <input type="text" id="address" placeholder=" " required />
+                    <label for="address" class="floating-label">Address</label>
+                    <span class="tooltip">Please enter your address.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="city" placeholder=" " required />
+                    <label for="city" class="floating-label">City</label>
+                    <span class="tooltip">Please enter your city.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="state" placeholder=" " required />
+                    <label for="state" class="floating-label">State</label>
+                    <span class="tooltip">Please enter your state.</span>
+                </div>
+            </div>
+
+            <div class="section account-info">
+                <h3>Account Information</h3>
+                <div class="input-group">
+                    <input type="text" id="username" placeholder=" " required />
+                    <label for="username" class="floating-label">Username</label>
+                    <span class="tooltip">Please enter your username.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" placeholder=" " required />
+                    <label for="password" class="floating-label">Password</label>
+                    <span class="tooltip">Please enter your password.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder=" " required />
+                    <label for="confirmPassword" class="floating-label">Confirm Password</label>
+                    <span class="tooltip">Please confirm your password.</span>
+                    <span id="mis-match" >Password isnt Matching</span>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Sign Up</button>
+                <button type="button" class="btn" id="backBtn">Back</button>
+            </div>
+        </form>
+
+        <footer>
+            <p>Already have an account? <a href="#">Login</a></p>
+        </footer>
+    </div>
+    <script src="registration.js"></script>
 </body>
 </html>
