@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Your Account</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="registation.css">
 </head>
 <body>
@@ -61,7 +62,6 @@
                 <h3>Contact Information</h3>
                 <div class="input-group">
                     <input type="tel" id="phone" placeholder="+1 (555) 123-4567" required />
-                    <!-- Removed the label for phone number, only placeholder remains -->
                     <span class="tooltip">Please enter your phone number.</span>
                 </div>
 
@@ -81,15 +81,19 @@
                 </div>
 
                 <div class="input-group">
-                    <input type="text" id="city" placeholder=" " required />
-                    <label for="city" class="floating-label">City</label>
-                    <span class="tooltip">Please enter your city.</span>
+                    <select id="state" required>
+                        <option value="" disabled selected>Select State</option>
+                    </select>
+                    <label for="state" class="floating-label"></label>
+                    <span class="tooltip">Please enter your state.</span>
                 </div>
 
                 <div class="input-group">
-                    <input type="text" id="state" placeholder=" " required />
-                    <label for="state" class="floating-label">State</label>
-                    <span class="tooltip">Please enter your state.</span>
+                    <select id="city" required>
+                        <option value="" disabled selected>Select City</option>
+                    </select>
+                    <label for="city" class="floating-label"></label>
+                    <span class="tooltip">Please enter your city.</span>
                 </div>
             </div>
 
@@ -105,13 +109,14 @@
                     <input type="password" id="password" placeholder=" " required />
                     <label for="password" class="floating-label">Password</label>
                     <span class="tooltip">Please enter your password.</span>
+                    <div class="password-strength"></div>
                 </div>
 
                 <div class="input-group">
                     <input type="password" id="confirmPassword" placeholder=" " required />
                     <label for="confirmPassword" class="floating-label">Confirm Password</label>
                     <span class="tooltip">Please confirm your password.</span>
-                    <span id="mis-match" >Password isnt Matching</span>
+                    <span class="error" id="mis-match">Passwords do not match</span>
                 </div>
             </div>
 
